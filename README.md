@@ -1,16 +1,47 @@
-# React + Vite
+# 🚀 Lunacal Frontend Assignment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### 📋 Overview
+This project is a **modern frontend redesign** inspired by the Pesofts website. The aim was to enhance user experience through a cleaner, faster, and more intuitive interface while maintaining the brand’s professional essence.  
+Built using **React + Vite**, the design replicates the provided Figma UI with precise attention to layout, spacing, alignment, and interactivity.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### ✨ Features
+- 🧠 **Profile Widget** with three interactive tabs — *About Me*, *Experiences*, and *Recommended*  
+- 🖼️ **Gallery Widget** allowing users to dynamically add new images  
+- 💻 **Responsive design** optimized for laptop screens (≥768px width)  
+- 🎨 **Accurate UI replication** — exact paddings, margins, shadows, and font hierarchy  
+- ⚡ **Fast and lightweight build** powered by Vite  
+- 🪶 Smooth hover transitions and modern minimal aesthetics  
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 🛠️ Tech Stack
+- **Framework:** React (with Vite)
+- **Styling:** Custom CSS
+- **Icons:** Lucide React
+- **Version Control:** Git & GitHub
+- **Hosting:** Vercel
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 🌐 Live Demo
+🔗 [View Live Project](https://capable-biscotti-4f8e51.netlify.app/)
+
+---
+
+### 💾 GitHub Repository
+🔗 [https://github.com/kammo234/lunacal](https://github.com/kammo234/lunacal)
+
+---
+
+### 💡 Design Concept
+> The redesigned interface emphasizes modern UI principles — simplicity, clarity, and visual balance. It maintains focus on the two main widgets, aligning them with precise spacing, shadows, and consistent color harmony. Interactive elements like tab switching and image addition enhance usability while keeping the layout clean and professional. The design ensures smooth responsiveness for laptop screens, offering an elegant and engaging user experience. Every detail, from typography to spacing, was crafted to create a refined, functional, and visually cohesive interface.
+
+---
+
+### 👨‍💻 Developer
+**Mohammad Kamran (kammo234)**  
+Frontend Developer  
+📧 Email: [mr.kammo234@gmail.com]  
+
