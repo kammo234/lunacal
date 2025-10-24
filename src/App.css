@@ -1,0 +1,30 @@
+.app {
+  display: flex;
+  min-height: 100vh;
+}
+
+.left-half {
+  flex: 1;
+  background-color: #f8fafc;
+}
+
+.right-half {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .app {
+    flex-direction: column;
+  }
+  
+  .right-half {
+    padding: 20px;
+    max-width: 100%;
+  }
+}

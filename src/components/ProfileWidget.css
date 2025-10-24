@@ -1,0 +1,355 @@
+.profile-widget {
+    background: #2d3748; /* Dark grey background */
+    border-radius: 16px;
+    padding: 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid #4a5568; /* Darker grey border */
+    overflow: hidden;
+}
+
+.tabs-container {
+    position: relative;
+    background: #1a202c; /* Darker grey background */
+    padding: 8px;
+    margin: 16px;
+    border-radius: 50px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tabs {
+    display: flex;
+    position: relative;
+    z-index: 2;
+}
+
+.tab {
+    flex: 1;
+    padding: 12px 16px;
+    background: none;
+    border: none;
+    color: #a0aec0; /* Light grey text for inactive tabs */
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 2;
+}
+
+.tab:hover {
+    color: #e2e8f0; /* Lighter grey on hover */
+}
+
+.tab.active {
+    color: #ffffff; /* White text for active tab */
+    font-weight: 600;
+}
+
+.tab-slider {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    right: 8px;
+    bottom: 8px;
+    border-radius: 50px;
+    background: transparent;
+    overflow: hidden;
+}
+
+.slider-indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 50px;
+    background: #000000; /* Black background for active tab */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    width: 33.333%;
+}
+
+.slider-indicator.about me {
+    transform: translateX(0%);
+}
+
+.slider-indicator.experiences {
+    transform: translateX(100%);
+}
+
+.slider-indicator.recommended {
+    transform: translateX(200%);
+}
+
+.tab-content {
+    padding: 0 24px 24px 24px;
+    min-height: 200px;
+}
+
+.about-content p {
+    color: #e2e8f0; /* Light grey text */
+    line-height: 1.7;
+    margin-bottom: 16px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.about-content p:last-child {
+    margin-bottom: 0;
+}
+
+.experiences-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.experience-item {
+    padding: 0;
+    border-left: 3px solid #4a5568; /* Dark grey border */
+    padding-left: 16px;
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 6px;
+}
+
+.experience-header h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #f7fafc; /* Light text */
+    margin: 0;
+}
+
+.period {
+    color: #a0aec0; /* Light grey */
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.role {
+    color: #e2e8f0; /* Light grey */
+    font-size: 14px;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #a0aec0; /* Light grey */
+    font-size: 13px;
+}
+
+.recommended-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.recommendation-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    background: #4a5568; /* Dark grey background */
+    border-radius: 12px;
+    transition: all 0.2s ease;
+}
+
+.recommendation-item:hover {
+    background: #2d3748; /* Darker grey on hover */
+    transform: translateY(-1px);
+}
+
+.rec-avatar img {
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.rec-info {
+    flex: 1;
+}
+
+.rec-info h4 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #f7fafc; /* Light text */
+    margin-bottom: 2px;
+}
+
+.rec-info p {
+    color: #a0aec0; /* Light grey */
+    font-size: 13px;
+    margin-bottom: 4px;
+    font-weight: 500;
+}
+
+.mutual {
+    color: #718096; /* Medium grey */
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.connect-btn {
+    background: #000000; /* Black background */
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.connect-btn:hover {
+    background: #8db2f1; 
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+/* Mobile devices (480px - 768px) */
+@media (max-width: 768px) {
+    .profile-widget {
+        border-radius: 12px;
+        margin: 0 12px;
+    }
+    
+    .tabs-container {
+        margin: 12px 8px;
+        padding: 4px;
+    }
+    
+    .tab {
+        padding: 8px 10px;
+        font-size: 12px;
+    }
+    
+    .tab-slider {
+        top: 4px;
+        left: 4px;
+        right: 4px;
+        bottom: 4px;
+    }
+    
+    .tab-content {
+        padding: 0 16px 16px 16px;
+        min-height: 180px;
+    }
+    
+    .about-content p {
+        font-size: 13px;
+        line-height: 1.6;
+        margin-bottom: 12px;
+    }
+    
+    .experience-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+    }
+    
+    .experience-header h4 {
+        font-size: 15px;
+    }
+    
+    .period {
+        font-size: 12px;
+    }
+    
+    .role {
+        font-size: 13px;
+    }
+    
+    .location {
+        font-size: 12px;
+    }
+    
+    .recommendation-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 8px;
+        padding: 16px;
+    }
+    
+    .rec-info {
+        text-align: center;
+    }
+    
+    .rec-info h4 {
+        font-size: 14px;
+    }
+    
+    .rec-info p {
+        font-size: 12px;
+    }
+    
+    .mutual {
+        font-size: 11px;
+    }
+    
+    .connect-btn {
+        width: 100%;
+        margin-top: 8px;
+    }
+}
+
+/* Small mobile devices (below 480px) */
+@media (max-width: 480px) {
+    .profile-widget {
+        margin: 0 8px;
+        border-radius: 10px;
+    }
+    
+    .tabs-container {
+        margin: 8px 6px;
+        border-radius: 40px;
+    }
+    
+    .tab {
+        padding: 6px 8px;
+        font-size: 11px;
+    }
+    
+    .tab-content {
+        padding: 0 12px 12px 12px;
+        min-height: 160px;
+    }
+    
+    .about-content p {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+    
+    .experience-item {
+        padding-left: 12px;
+    }
+    
+    .experience-header h4 {
+        font-size: 14px;
+    }
+    
+    .role {
+        font-size: 12px;
+    }
+    
+    .recommendation-item {
+        padding: 12px;
+    }
+    
+    .rec-avatar img {
+        width: 36px;
+        height: 36px;
+    }
+}
+
